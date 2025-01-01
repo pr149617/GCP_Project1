@@ -2,7 +2,7 @@
 
 This project uses Terraform to create and manage resources in Google Cloud Platform (GCP). The Terraform configuration sets up a VPC, a subnet, firewall rules, an instance template, auto-healing instance groups, a health check, a backend service, and URL maps for a web application. The application also includes a health check at `/healthz.html`.
 
-![Screenshot Description](GCP_Project1/diagram.png)
+![Screenshot Description](diagram.png)
 
 ## Resources
 
