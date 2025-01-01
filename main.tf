@@ -1,6 +1,6 @@
 provider "google" {
-    credentials = file("D:/Knowledge/terraform/TerraformHandson/svckey.json")
-    project = "sunlit-form-445108-f1"
+    credentials = file("/path/svckey.json")
+    project = "GCP-PRoject-ID"
     region = "asia-south1"
     
 
@@ -24,7 +24,7 @@ resource "google_compute_firewall" "allowmultiport" {
     network = google_compute_network.vpc-t.name
     allow {
       protocol = "tcp"
-      ports = ["22","80","8080","3389"]
+      ports = ["22","80","8080","3389","8888"]
     
     }
 
